@@ -1,3 +1,5 @@
+\documentclass[a4paper, 12pt]{article}
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
@@ -6,6 +8,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{stmaryrd}
+\usepackage{dsfont}
 
 \newtheorem{definition}{Définition}
 \newtheorem{proposition}{Proposition}
@@ -13,11 +16,18 @@
 \newtheorem*{preuve}{Démonstration}
 \newtheorem*{remarque}{Remarque}
 
+\newcommand{\CC}{\mathds{C}}
+\newcommand{\RR}{\mathds{R}}
+\newcommand{\QQ}{\mathds{Q}}
+\newcommand{\ZZ}{\mathds{Z}}
+\newcommand{\NN}{\mathds{N}}
+\newcommand{\indic}{\mathds{1}}
+
 \title{Matière}
 \author{Professeur}
 
 \begin{document}
   \maketitle
 
-  %\input{partie1.tex}
+  \input{partie1.tex}
 \end{document}
