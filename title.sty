@@ -1,0 +1,25 @@
+\ProvidesPackage{title}[28/02/2016]
+
+\newcommand{\semester}[1]{\gdef\@semester{#1}}
+\newcommand{\@semester}{}
+\newcommand{\nopageskipaftertitle}{\let\endtitlepage\relax}
+%Needs a better name
+
+\renewcommand{\maketitle}{
+\makeatletter
+\begin{titlepage}
+  \raggedright
+    {\scshape \@author} \hfill \@semester \hfill \@date
+
+  \vspace{3em}
+  \centering
+    {\LARGE \@title\par}
+
+  \vspace{1em}
+  \hrulefill
+
+  \vspace{2em}
+\end{titlepage}
+\makeatother
+}
+\endinput
